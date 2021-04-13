@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#first{
+    height: 10vh;
+    width: 50%;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: rgb(236, 227, 227); 
+    font-family: 'Poppins', sans-serif;
+}
+#first >strong > p{
+    margin-right: 70px;
+    font-size: 25px;
+}
+.Nav1-main{
+    display: flex;
+    /* height: 10vh; */
+}
+#second{
+    display: flex;
+    height: 10vh;
+    width: 50%;
+}
+#input{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+#input > div{
+    font-size: 2em;
+}
+#ApplicationNo{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+#progress{
+    width: 105%;
+    border-radius: 15px;
+    background-color: rgb(241, 233, 233);
+    border: none;
+    height: 25px;
+}
+
+/* responsive  */
+
+@media only screen and (max-width: 1180px)
+{
+    #first >strong > p{
+        margin-right: 70px;
+        font-size: 18px;
+    }
+
+    #input > div{
+        font-size: 1.5em;
+    }
+    #progress{
+        width: 80%;
+        border-radius: 15px;
+        background-color: rgb(241, 233, 233);
+        border: none;
+        height: 22px;
+    }
+}
+@media only screen and (max-width: 998px)
+{
+    #first >strong > p{
+        margin-right: 70px;
+        font-size: 15px;
+    }
+    #first{
+        height: 8vh;
+    }
+    #second{
+        height: 8vh;
+    }
+   
+}
+@media only screen and (max-width: 768px)
+{
+    #input > div{
+        font-size: 1em;
+    }
+    #ApplicationNo > p{
+        font-size: 12px ;
+    }
+
+}
+@media only screen and (max-width: 480px)
+{
+    #first{
+        width: 100%;
+        display: flex;
+        justify-content:center;
+        align-items: center; 
+        font-family: 'Poppins', sans-serif;
+    }
+    .Nav1-main{
+        flex-flow: column;
+    }
+    #first >strong > p{
+        margin-right: 70px;
+        font-size: 13px;
+    }
+    #second{
+        display: flex;
+        height: 10vh;
+        width: 100%;
+    }
+    #ApplicationNo > p{
+        font-size: 13px ;
+    }
+    #input > div{
+        font-size: 1em;
+    }
+    #progress{
+        width: 90%;
+        border-radius: 15px;
+        background-color: rgb(241, 233, 233);
+        border: none;
+        height: 22px;
+    }
+
+}
